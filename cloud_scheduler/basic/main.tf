@@ -53,7 +53,7 @@ resource "google_cloud_scheduler_job" "default" {
   name        = "test-job"
   description = "test job"
   schedule    = "30 16 * * 7"
-  region      = "us-central1"
+  region      = "us-east1"
 
   pubsub_target {
     topic_name = google_pubsub_topic.default.id
